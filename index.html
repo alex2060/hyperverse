@@ -357,13 +357,11 @@ player2frams=[["https://alex2060.github.io/spiderman/spidy2/black/spidey_left1.p
 
 <script type="text/javascript">
 
-alert("go")
 mypage=parseURLParams(window.location.href);
 
 
 
 console.log(Object.keys(mypage).length);
-alert(mypage.length);
 
 
 UIchange("none");
@@ -509,7 +507,6 @@ myUIcounter=1;
 
 logEvent="";
 function UIchange(argument) {
-    //alert("inhere")
     UIcounter=0;
     if (argument=='y+') {
     document.getElementById("down").style.visibility=false;
@@ -845,7 +842,6 @@ changetomap('',"A")
 
 function changetomap(A,B){
 
-    alert("A");
     mymaptext=A;
     mymaptext=mymaptext.replaceAll('(___P___)', '"');
     mymaptext=mymaptext.replaceAll('(___F___)','/');
@@ -874,10 +870,8 @@ function JSONtoMap(json){
     try {
         json=myfun();
         player2frams=getplayers();
-        alert("got json")
         console.log("players",player2frams)
     } catch (error) {
-        alert("failed to get json")
       console.error(error);
     }
     console.log("jsoninmap");
@@ -909,7 +903,6 @@ function JSONtoMap(json){
     FR2 = player2frams[value][1];
     } catch (error) {
       console.error(error);
-      alert("failed");
     }
     AU=values[7];
     document.getElementById("idU").src=AU;
@@ -1019,7 +1012,6 @@ function SaveMaptoJSON(){
       };
     }
     jsontext.replace('"', '\\\"');
-    alert("didit");
     jsontext.replace('\'', '\\\'');
 
     mymaptext=jsontext;
@@ -1525,7 +1517,6 @@ function parseURLParams(url) {
         query = url.slice(queryStart, queryEnd - 1),
         pairs = query.replace(/\+/g, " ").split("&"),
         parms = {}, i, n, v, nv;
-    alert("2")
     if (query === url || query === ""){
         return parseURLParams("http://localhost:8000/1_F.html?player=0&map=https://alex2060.github.io/spiderman/my.js&room=!bbzmvbyRKWnfoLWXPA:matrix.org");
     };
@@ -1669,7 +1660,6 @@ function pasemessage(message){
             pasemessage(event.detail.content.body);
         });
 
-        alert(mypage['room'][0]);
         const roomId  = mypage['room'][0];
         matrix.joinRoom(roomId);
 
@@ -1727,7 +1717,7 @@ function pasemessage(message){
     document.querySelector("#but").addEventListener("click",event=>{
         myfun();
         JSONtoMap("");
-        const redirectUrl = location.origin + '/sin.html';
+        const redirectUrl = location.origin + 'hyperverse/sin.html';
         matrix.initSso(redirectUrl);
 
     })
