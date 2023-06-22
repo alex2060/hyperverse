@@ -167,8 +167,8 @@
 
 
         #img1{
-            width: 50%;
-            height:50%;
+            width: 50px;
+            height:50px;
             pointer-events: none;
 
                 -webkit-tap-highlight-color: transparent;
@@ -205,7 +205,7 @@
      ontouchstart="mystart()"
      ontouchend="mystop()"
      ontouchcancel="mystop()">
-        >
+        
 
            <img id='img1' src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clker.com%2Fcliparts%2Fm%2FJ%2Fl%2FM%2Fy%2FM%2Fglossy-grey-icon-button-hi.png&f=1&nofb=1&ipt=8a62b657be3cb557237c1605f66c9d02fbb5cf066dfe8cef72efa848b90fcab7&ipo=images"
 	onmousedown="mystart()"
@@ -266,6 +266,7 @@
 
 </SCRIPT>
 
+<script async src="https://www.instagram.com/embed.js"></script>
 <script type="text/javascript">
 
 mypage=parseURLParams(window.location.href);
@@ -304,15 +305,20 @@ mayadder=2.3;
 function addplayer(argument) {
 mayadder+=0.002;
 
-    return object1(mayadder,"<img src=\"https://i.pinimg.com/736x/5d/12/7b/5d127b6eec7b3cf52a6f9ac091c6a2fc--oversized-sunglasses-sunglasses-women.jpg\" id=\"play\" alt=\"X+\" width=\"145.6px\" height=\"200px\">")+object1(mayadder+3.1415*1/3,"<img src=\" https://alex2060.github.io/spiderman/spidey_left1.png\" id=\"play\" alt=\"X+\" width=\"100%\" height=\"100%\">")+object1(mayadder+3.1415*2/3,"<img src=\" https://alex2060.github.io/spiderman/spidey_left1.png\" id=\"play\" alt=\"X+\" width=\"100%\" height=\"100%\">")+object1(mayadder+3.1415*3/3,"<img src=\" https://alex2060.github.io/spiderman/spidey_left1.png\" id=\"play\" alt=\"X+\" width=\"100%\" height=\"100%\">")+object1(mayadder+3.1415*4/3,"<img src=\" https://alex2060.github.io/spiderman/spidey_left1.png\" id=\"play\" alt=\"X+\" width=\"100%\" height=\"100%\">")+object1(mayadder+3.1415*5/3,"<img src=\" https://alex2060.github.io/spiderman/spidey_left1.png\" id=\"play\" alt=\"X+\" width=\"100%\" height=\"100%\">");
+    return object1(mayadder,"<img src=\"https://i.pinimg.com/736x/5d/12/7b/5d127b6eec7b3cf52a6f9ac091c6a2fc--oversized-sunglasses-sunglasses-women.jpg\" id=\"play\" alt=\"X+\" width=\"200.6px\" height=\"300px\">","1")+
+    object1(mayadder+3.1415*1/3,"<iframe width=\"330\" height=\"202\" src=\"https://www.youtube.com/embed/G0pdUtfq1pI\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>","2")
+    +object1(mayadder+3.1415*2/3,"<blockquote class=\"instagram-media\" data-instgrm-permalink=\"https://www.instagram.com/p/Cs4LoX5MkRN/?igshid=MzRlODBiNWFlZA%3D%3D\" data-instgrm-version=\"13\" style=\"width:300px;height:300px;\"></blockquote>","3")
+    +object1(mayadder+3.1415*3/3,"<img src=\" https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._-SysJQ8dfZHhsTOabIegAHaLH%26pid%3DApi&f=1&ipt=98570521c5907b044aac1a07223ba059173546dfe9ad24f687b76174e00bd15c&ipo=images\" id=\"play\" alt=\"X+\" width=\"200px\" height=\"300px\">","4")
+    +object1(mayadder+3.1415*4/3,"<img src=\" https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.3WRGigYUq9xQwtQMYJ69pgHaLH%26pid%3DApi&f=1&ipt=eb6f3cb1854885a7e6c404421856f00df5ab76e5811f5727801271019c07ff19&ipo=images\" id=\"play\" alt=\"X+\" width=\"200px\" height=\"300px\">","5")
+    +object1(mayadder+3.1415*5/3,"<img src=\"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SllJh8eKko2_d6buODobZAHaLJ%26pid%3DApi&f=1&ipt=9417b62543580cc8897968c13819dbe41fe491b59b803f29c5ffb7124a32ed2a&ipo=images\" id=\"play\" alt=\"X+\" width=\"200px\" height=\"300px\">","6");
 }
 
 
-function object1(mayadder,V2){
+function object1(mayadder,V2,i){
 
 console.log(window.innerHeight,window.innerWidth)
 xadder=(window.innerWidth-400)/2;
-return "<div  id=\"player1\" style=\"width: 100px; height: 100px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(playerx+100+1.61803398875*270*Math.cos(mayadder)+xadder)+"px, "+(playery+150+2*270*Math.cos(mayadder)/1.61803398875-300)+"px, "+(playerz+50+270*Math.sin(mayadder))+"px) rotateY(-45deg) rotateX(0deg); \"   >  "+V2+" </div>";
+return "<div  id=\"player"+i+"\" style=\"width: 100px; height: 100px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(playerx+100+1.61803398875*270*Math.cos(mayadder)+xadder)+"px, "+(playery+150+2*270*Math.cos(mayadder)/1.61803398875-300)+"px, "+(playerz+50+270*Math.sin(mayadder))+"px) rotateY(-45deg) rotateX(0deg); \"   >  "+V2+" </div>";
 }
 
 
@@ -756,10 +762,47 @@ function mystart(){
 function mystop(){
 	pressed=1;
 }
+
+number=2.3
+function myupdate(){
+	number+=0.002
+	var element = document.getElementById('player1');
+	element.style.transform = "transform: translate3d("+(playerx+100+1.61803398875*270*Math.cos(number)+xadder)+"px, "+(playery+150+2*270*Math.cos(number)/1.61803398875-300)+"px, "+(playerz+50+270*Math.sin(number))+"px)";
+	element.style.transform = 'translate3d('+(playerx+100+1.61803398875*270*Math.cos(number)+xadder)+'px, '+(playery+150+2*270*Math.cos(number)/1.61803398875-300)+'px,'+(playerz+50+270*Math.sin(number))+'px ) rotateY(-45deg) rotateX(0deg)';
+	console.log("inhere")
+
+	var element2 = document.getElementById('player2');
+number2=number+1/3*3.1415;
+	element2.style.transform = 'translate3d('+(playerx+100+1.61803398875*270*Math.cos(number2)+xadder)+'px, '+(playery+150+2*270*Math.cos(number2)/1.61803398875-300)+'px,'+(playerz+50+270*Math.sin(number2))+'px ) rotateY(-45deg) rotateX(0deg)';
+	console.log("inhere")
+
+		var element3 = document.getElementById('player3');
+number2=number+2/3*3.1415;
+	element3.style.transform = 'translate3d('+(playerx+100+1.61803398875*270*Math.cos(number2)+xadder)+'px, '+(playery+150+2*270*Math.cos(number2)/1.61803398875-300)+'px,'+(playerz+50+270*Math.sin(number2))+'px ) rotateY(-45deg) rotateX(0deg)';
+
+
+		var element4 = document.getElementById('player4');
+number2=number+3/3*3.1415;
+	element4.style.transform = 'translate3d('+(playerx+100+1.61803398875*270*Math.cos(number2)+xadder)+'px, '+(playery+150+2*270*Math.cos(number2)/1.61803398875-300)+'px,'+(playerz+50+270*Math.sin(number2))+'px ) rotateY(-45deg) rotateX(0deg)';
+
+		var element5 = document.getElementById('player5');
+number2=number+4/3*3.1415;
+	element5.style.transform = 'translate3d('+(playerx+100+1.61803398875*270*Math.cos(number2)+xadder)+'px, '+(playery+150+2*270*Math.cos(number2)/1.61803398875-300)+'px,'+(playerz+50+270*Math.sin(number2))+'px ) rotateY(-45deg) rotateX(0deg)';
+
+		var element6 = document.getElementById('player6');
+number2=number+5/3*3.1415;
+	element6.style.transform = 'translate3d('+(playerx+100+1.61803398875*270*Math.cos(number2)+xadder)+'px, '+(playery+150+2*270*Math.cos(number2)/1.61803398875-300)+'px,'+(playerz+50+270*Math.sin(number2))+'px ) rotateY(-45deg) rotateX(0deg)';
+
+	console.log("inhere")
+
+
+	
+
+}
 function update() {
 
 	if (pressed==0){
-		document.getElementById("sean").innerHTML=get_space();
+		myupdate();
 	}
     if (mode==0) {
         moveforward(direction,speed);
