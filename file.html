@@ -163,14 +163,7 @@
             width: 300px;
             height:390px;
         }
-        #mode{
-            z-index: 100000;
-            position: absolute;
-            left: 20%;
-            top:90%;
-            width: 35%;
-            height:30%;
-        }
+
 
 
         #img1{
@@ -214,26 +207,11 @@
 
 
 
-    <div id="stop"     onclick="UIchange('none');">
-        
-
-
-    </div>
-    <div id="z1"       onclick="UIchange('x+');">
-    </div>
-    <div id="z2"       onclick="UIchange('x-');">
-
 
 
     </div>
 
 
-
-
-    <div id="rot1"     onclick="UIchange('r+');">
-
-    </div>
-    <div id="rot2"     onclick="UIchange('r-');">
 
 
 
@@ -247,77 +225,6 @@
 
 
 
-    <div id="texbox"     onclick="">
-            <label for="fname" style="color: white;">ID</label><br>
-            <input type="text" id="boxID" name="fname"><br>
-            <label for="fname" style="color: white;">HTML</label><br>
-            <input type="text" id="HTML" name="fname"><br>
-            <label for="fname" style="color: white;">IFRAM</label><br>
-            <input type="text" id="IFRam" name="fname"><br>
-            <button onclick="addHTML()">Change</button><button onclick="ONHTML()">ON HTMl</button></br>
-            <button onclick="offHTML()">OFF HTML</button>
-            <button onclick="DELL()">DELL</button></br>
-            <button onclick="MaptoJSON();">MAKEJSON</button></br>
-            <button onclick="SaveMaptoJSON();">Save_MAP</button></br>
-    </div>
-
-
-    <div id="texbox2"     onclick="">
-            <label for="fname" style="color: white;">AU1</label>
-            <input type="text" id="AU1" name="fname"><br>
-            <label for="fname" style="color: white;">AD1</label>
-            <input type="text" id="AD1" name="fname"><br>
-            <label for="fname" style="color: white;">AL1</label>
-            <input type="text" id="AL1" name="fname"><br>
-            <label for="fname" style="color: white;">AR1</label>
-            <input type="text" id="AR1" name="fname"><br>
-            <label for="fname" style="color: white;">ARD</label>
-            <input type="text" id="ARD1" name="fname"><br>
-            <label for="fname" style="color: white;">ALD</label>
-            <input type="text" id="ALD1" name="fname"><br>
-
-            <label for="fname" style="color: white;">ALU</label>
-            <input type="text" id="ALU1" name="fname"><br>
-
-            <label for="fname" style="color: white;">ARU</label>
-            <input type="text" id="ARU1" name="fname"><br>
-
-            <label for="fname" style="color: white;">CR1</label>
-            <input type="text" id="CR1" name="fname"><br>
-
-
-            <label for="fname" style="color: white;">CR2</label>
-            <input type="text" id="CR2" name="fname"><br>
-
-            <label for="fname" style="color: white;">CL1</label>
-            <input type="text" id="CL1" name="fname"><br>
-
-
-            <label for="fname" style="color: white;">CL2</label>
-            <input type="text" id="CL2" name="fname"><br>
-
-
-            <label for="fname" style="color: white;">CJ1</label>
-            <input type="text" id="CJ1" name="fname"><br>
-            
-            <label for="fname" style="color: white;">CS1</label>
-            <input type="text" id="CS1" name="fname"><br>
-
-
-            <label for="fname" style="color: white;">CS2</label>
-            <input type="text" id="CS2" name="fname"><br>
-
-            <label for="fname" style="color: white;">mod</label>
-            <input type="text" id="modeid" name="fname"><br>
-
-            <label for="fname" style="color: white;">BGI</label>
-            <input type="text" id="BGID" name="fname"><br>
-
-
-
-
-            <button onclick="changemap()">change map</button>
-    </div>
 
     <div id="mode"     onclick="">
 
@@ -712,7 +619,7 @@ function JSONtoMap(json){
 
     modeimgV=values[15];
     console.log(values);
-    document.getElementById("modeimg").src=modeimgV;
+
 
     BG1=values[16];
 
